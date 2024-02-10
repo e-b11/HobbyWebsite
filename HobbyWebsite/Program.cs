@@ -1,3 +1,6 @@
+//Emma Bastian
+//Mission 5 Hobby Website
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

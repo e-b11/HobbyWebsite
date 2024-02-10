@@ -17,6 +17,49 @@ html {
   min-height: 100%;
 }
 
+html,
 body {
-  margin-bottom: 60px;
+    height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    align-self: center;
+    padding: 0 1rem;
+    max-width: 70rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    margin-top: auto;
+    padding: 2rem 1rem 3rem;
+    background-color: darkblue;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+h1 {
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    font-size: large;
+    box-shadow: 1px 1px 1px black;
+    border: 1px solid black;
+    text-align: center;
+    height: 2rem;
+    width: 3rem;
+    padding: 1rem;
+    margin: auto;
+}
+
+.output{
+    font-size: 1.5rem;
 }

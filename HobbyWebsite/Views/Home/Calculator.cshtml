@@ -3,13 +3,21 @@
 *@
 @{
 }
-<h2>Calculator</h2>
-<form>
-    <label for="hours">Hours Needed: </label>
-    <input type="number" id="hours" min="0"/>
-    <label for="rate">Rate: </label>
-    <input type="number" id="rate" value="20" readonly />
-    <button type="button" id="btnSubmit">Calculate</button>
-</form>
+<main>
 
-<p id="output"></p>
+<h2>Calculator</h2>
+
+<p>Enter in the number of hours you would like Emma to tutor you in art to see a total.</p>
+    <form>
+        <label for="hours">Hours Needed: </label>
+        <input type="number" id="hours" min="0"/>
+        <label for="rate">Rate (per hour): $</label>
+        <input type="number" id="rate" value="20" readonly />
+        <button type="button" id="btnSubmit">Calculate</button>
+    </form>
+    <br />
+    <div>
+        <label>Total Cost:</label>
+        <output id="output"></output>
+    </div>
+</main>

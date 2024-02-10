@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - HobbyWebsite</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/HobbyWebsite.styles.css" asp-append-version="true" />
     <link rel="icon" href="@Url.Content("~/favicon.ico")" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
 
     <nav>
-        <a href="@Url.Action("Index", "Home")">Home</a>
-        <a href="@Url.Action("Calculator", "Home")">Calculator</a>
-
+        <!--<a href="@Url.Action("Index", "Home")">Home</a>
+        <a href="@Url.Action("Calculator", "Home")">Calculator</a>-->
+        <a asp-controller="Home" asp-action="Index">Home</a>
+        <a asp-controller="Home" asp-action="Calculator">Calculator</a>
+                
     </nav>
 
     <h1>Emma's Hobby Website</h1>
@@ -22,7 +24,7 @@
     @RenderBody()
 
     <footer>
-        &copy;Emma Bastian 2024
+        Emma Bastian &copy;2024
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
