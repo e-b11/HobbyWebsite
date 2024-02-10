@@ -47,19 +47,8 @@ h1 {
     text-align: center;
 }
 
-.box {
-    display: flex;
-    align-items: center;
-    font-size: large;
-    box-shadow: 1px 1px 1px black;
-    border: 1px solid black;
-    text-align: center;
-    height: 2rem;
-    width: 3rem;
-    padding: 1rem;
-    margin: auto;
-}
 
 .output{
     font-size: 1.5rem;
 }
+
